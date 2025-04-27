@@ -1,5 +1,5 @@
 const client_id = 'b4692aa365bc42dca4728cf4fa953080'; // Вставь свой Client ID
-const redirect_uri = 'https://karmirshalyan.github.io/spotify-connect/';
+const url = `https://accounts.spotify.com/authorize?client_id=${client_id}&response_type=code&redirect_uri=${encodeURIComponent(redirect_uri)}&state=${state}&code_challenge=${code_challenge}&code_challenge_method=S256&scope=user-read-playback-state user-modify-playback-state user-read-currently-playing`;
 // Генерация случайных строк для PKCE
 const state = generateRandomString(16);
 const code_verifier = generateRandomString(64);
