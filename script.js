@@ -1,6 +1,6 @@
 // ==== Настройки Spotify API ====
 const client_id = 'b4692aa365bc42dca4728cf4fa953080'; // вставь свой Client ID сюда
-const redirect_uri = '';
+const redirect_uri = 'https://karmirshalyan.github.io/spotify-connect/';
 
 const scopes = [
     'user-read-playback-state',
